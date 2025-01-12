@@ -1,4 +1,4 @@
-import { Phone, Mail, ShoppingBasket, ShoppingCart, Heart } from 'lucide-react'
+import { Phone, Mail, ShoppingCart, Heart } from 'lucide-react'
 
 const TopBar = () => {
   return (
