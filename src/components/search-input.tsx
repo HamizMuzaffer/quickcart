@@ -8,7 +8,7 @@ export default function SearchInput() {
       <Input 
         type="text" 
         placeholder="Search..." 
-        className="pr-16 rounded-full"
+        className="pr-16 rounded-full bg-white py-4"
       />
       <Button 
         type="submit" 

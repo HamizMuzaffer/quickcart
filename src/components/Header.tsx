@@ -16,9 +16,11 @@ const Header = () => {
             <li><Link href="/contact" className=" hover:text-primary border-r-2 border-white px-2 ">Contact</Link></li>
             <li><Link href="/contact" className=" hover:text-primary border-r-2 border-white px-2 ">Products</Link></li>
             <li><Link href="/contact" className=" hover:text-primary border-r-2 border-white px-2 ">About us</Link></li>
+            <Link href='/sign-in'>
             <Button className='bg-secondary text-black hover:text-white px-8'>
               Login <User />
             </Button>
+            </Link>
           </ul>
         </nav>
       </div>
