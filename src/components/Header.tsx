@@ -1,8 +1,11 @@
+'use client'
 import Link from 'next/link'
 import { Button } from './ui/button'
 import { User } from 'lucide-react'
+import { useUser } from '@clerk/nextjs'
 
 const Header = () => {
+  const {user,isSignedIn} = useUser()
   return (
     <header className="bg-transparent shadow-md">
       <div className="container mx-auto py-4 px-4 flex justify-between items-center">
@@ -16,11 +19,23 @@ const Header = () => {
             <li><Link href="/contact" className=" hover:text-primary border-r-2 border-white px-2 ">Contact</Link></li>
             <li><Link href="/contact" className=" hover:text-primary border-r-2 border-white px-2 ">Products</Link></li>
             <li><Link href="/contact" className=" hover:text-primary border-r-2 border-white px-2 ">About us</Link></li>
-            <Link href='/sign-in'>
-            <Button className='bg-secondary text-black hover:text-white px-8'>
-              Login <User />
-            </Button>
-            </Link>
+            {
+  isSignedIn ? (
+    <Link href="/profile">
+      <Button className="bg-secondary text-black hover:text-white px-8">
+        Profile 
+      </Button>
+    </Link>
+  ) : (
+    <Link href="/sign-in">
+      <Button className="bg-secondary text-black hover:text-white px-8">
+        Login <User />
+      </Button>
+    </Link>
+  )
+}
+
+
           </ul>
         </nav>
       </div>
