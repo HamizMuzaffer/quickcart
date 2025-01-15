@@ -10,7 +10,7 @@ const Header = () => {
           quick.
         </Link>
         <nav>
-          <ul className="flex space-x-4 text-white justify-center items-center">
+          <ul className="flex space-x-4 text-white justify-center items-center font-sans font-bold">
             <li><Link href="/" className=" hover:text-primary border-r-2 border-white px-2 border-l-2 ">Home</Link></li>
             <li><Link href="/about" className=" hover:text-primary border-r-2 border-white px-2 ">Services</Link></li>
             <li><Link href="/contact" className=" hover:text-primary border-r-2 border-white px-2 ">Contact</Link></li>

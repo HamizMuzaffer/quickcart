@@ -10,6 +10,11 @@ body {
   font-family: "rowdies";
   src: url("/fonts/Rowdies/Rowdies-Bold.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "inter";
+  src: url("/fonts/inter.ttf") format("truetype");
+}
 @layer base {
   :root {
     --background: 0 0% 100%;

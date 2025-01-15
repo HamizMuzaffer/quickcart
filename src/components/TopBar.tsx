@@ -2,7 +2,7 @@ import { Phone, Mail, ShoppingCart, Heart } from 'lucide-react'
 
 const TopBar = () => {
   return (
-    <div className="bg-primary text-primary-foreground py-2 px-4 text-sm">
+    <div className="bg-amber-900 text-primary-foreground py-2 px-4 text-sm">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <span className="flex items-center">
